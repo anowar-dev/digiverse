@@ -92,7 +92,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient( #78a0c1, #00002E);
+    background: linear-gradient(#ffffff, #6d94b3, #00002E);    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +101,7 @@ img{
     position: relative;
 }
 .body_main .header_logo{
-    width: 200px;
+    width: 18rem;
     margin: 1rem auto;
 }
 
@@ -231,6 +231,9 @@ img{
     .onLoad .onLoad_body .logo{
         width: 18rem;
     }
+    .body_main .header_logo{
+        width: 15rem !important;
+    }
 }
 
 /*----------- max-width: 576px -------------*/
@@ -264,7 +267,7 @@ img{
         padding: 0 1rem !important;
     }
     .body_main .header_logo{
-        width: 10rem !important;
+        width: 13rem !important;
     }
 }
 
@@ -304,7 +307,7 @@ img{
         padding: 0 1rem;
     }
     .body_main .header_logo{
-        width: 8rem !important;
+        width: 10rem !important;
     }
     .content .slider_main{
         margin: 2rem auto !important;
