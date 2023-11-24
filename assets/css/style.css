@@ -33,7 +33,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#d2d7e0, #517887);
+    background: radial-gradient(#d2d7e0, #517887);
     z-index: 999999999999999;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ img{
 .onLoad_body .icon i{
     font-size: 1.5rem;
     padding: .4rem 1.2rem;
-    color: rgb(106, 106, 106);
+    color: rgb(160, 160, 160);
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
@@ -92,7 +92,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#ffffff, #6d94b3, #00002E);    
+    background: linear-gradient(#ffffff, #ffffff, rgb(199, 198, 198), rgb(113, 113, 113));    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ img{
 .container .body_main{
     position: relative;
 }
-.body_main .header_logo{
+.header_logo{
     width: 18rem;
     margin: 1rem auto;
 }
@@ -124,14 +124,14 @@ img{
 .slider_box .slider_title{
     font-size: 2.5rem;
     font-weight: 900;
-    color: rgb(41 41 118);
+    color: #51545b;
     line-height: 110%;
     margin-bottom: 0.4rem;
 }
 .slider_box .slider_text{
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(41 41 118);
+    color: #51545b;
     line-height: 120%;
 }
 .body_main .btns{
@@ -146,14 +146,14 @@ img{
     font-size: 1rem;
     font-weight: 700;
     color: #ffffff;
-    background: linear-gradient(3deg, rgb(13, 13, 13), rgb(0, 0, 169));
+    background: #51545b;
     padding: .6rem 2rem;
     border-radius: .4rem;
     margin: 0 .8rem;
-    transition: .3s;
+    transition: all .3s;
 }
 .body_main .btns a:hover{
-    background: linear-gradient(3deg, rgb(1, 1, 115), rgb(13, 13, 13));
+    background: #30333c;
 }
 .body_main .terms a{
     text-decoration: none;
@@ -202,6 +202,205 @@ img{
 }
 /*==== Body End =====*/
 
+/*========== Login Page Srart ==============*/
+.login{
+    background: #fffff9;
+    min-height: 100vh;
+}
+.login .header_logo{
+    margin-top: 0 !important;
+}
+.login_main{
+    width: 100%;
+    max-width: 400px;
+    margin: 5rem auto auto auto;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.login_main .ligin_title{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 110%;
+    margin-bottom: 2rem;
+    color: #273c75;
+}
+.login_main form label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a475d;
+    display: block;
+    text-align: left;
+}
+.login_main form input{
+    outline-color: #3a475d;
+    -webkit-outline-color: #3a475d;
+    -moz-outline-color: #3a475d;
+    border-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 1px 0 #3a475d;
+    position: relative;
+    transition: all .3s;
+    background: rgba(0, 0, 0, .02);
+}
+.login_main form input:focus::placeholder{
+   position: absolute;
+   top: -100%;
+   background: #ffffff;
+}
+.login_main form .login_btn{
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background: #3a475d;
+    cursor: pointer;
+    transition: all .3s;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.login_main form .login_btn:hover{
+    background: #122138;
+}
+.login_main .login_bottom a{
+    text-decoration: none;
+    color: #122138;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.login_main .login_bottom a:hover{
+    color: #000000;
+}
+.login_main .login_bottom{
+    font-size: .9rem;
+    font-weight: 600;
+    color: #677181;
+}
+.login_with_google{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.login_with_google .or{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .1rem;
+}
+.login_with_google .or .or_border{
+    width: 45%;
+    height: 1px;
+    background: #3a475d;
+}
+.login_with_google .or .or_content{
+    width: 10%;
+    color: #3a475d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.login_with_google .another_btn{
+    width: 100%;
+    box-shadow: 0 0 1px 0 #3a475d;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .7rem;
+    padding: 0 .8rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    background: transparent;
+    cursor: pointer;
+    outline-color: #3a475d;
+    border-color: transparent;
+    transition: all .3s;
+}
+.login_with_google .another_btn:hover{
+    background: rgba(0, 0, 0, .1);
+}
+.login_with_google .another_btn img{
+    height: 1.5rem;
+}
+.login_with_google .another_btn p{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #3a475d;
+}
+.login_main .trams{
+    width: fit-content;
+    margin: 5rem auto 1rem auto;
+}
+.login_main .trams a{
+    text-decoration: none;
+    color: #3a475d;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 0 .5rem;
+    border-right: 1px solid #3a475d;
+    transition: all .3s;
+}
+.login_main .trams a:last-child{
+    border: unset;
+}
+.login_main .trams a:hover{
+    color: #122138;
+}
+/*========== Login Page End ==============*/
+
+/*============= Trams Condition Start ===========*/
+.terms_main .checklist{
+    width: 100%;
+    max-width: 30rem;
+    margin: 5rem auto auto auto;
+    box-shadow: 0 0 2px 0 #3a475d;
+    background: #fffff9;
+    padding: 1.1rem;
+    border-radius: .3rem;
+}
+.terms_main .checklist .terms{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .8);
+    margin-bottom: 0.6rem;
+}
+.terms_main .checklist .terms a{
+    font-weight: 700;
+    color: #3a475d;
+    text-decoration: none;
+    transition: all .3s;
+}
+.terms_main .checklist .terms a:hover{
+    color: #000000;
+}
+.terms_main .checklist .agree_btn{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fffff9;
+    background: #3a475d;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}
+.terms_main .checklist .agree_btn:hover{
+    background: #000000;
+}
+/*============= Trams Condition End ===========*/
+
 
 /*========== Start Responsive ===========*/
 
@@ -231,8 +430,11 @@ img{
     .onLoad .onLoad_body .logo{
         width: 18rem;
     }
-    .body_main .header_logo{
+    .header_logo{
         width: 15rem !important;
+    }
+    .login_main{
+        margin: 4rem auto auto auto !important;
     }
 }
 
@@ -266,8 +468,11 @@ img{
     .container{
         padding: 0 1rem !important;
     }
-    .body_main .header_logo{
+    .header_logo{
         width: 13rem !important;
+    }
+    .login_main{
+        margin: 3rem auto auto auto !important;
     }
 }
 
@@ -306,11 +511,14 @@ img{
         text-align: center !important;
         padding: 0 1rem;
     }
-    .body_main .header_logo{
+    .header_logo{
         width: 10rem !important;
     }
     .content .slider_main{
         margin: 2rem auto !important;
+    }
+    .login_main{
+        margin: 2rem auto auto auto !important;
     }
 }
 
