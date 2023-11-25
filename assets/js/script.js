@@ -32,3 +32,14 @@ setInterval(() => {
   }
 }, 4000);
 
+//checklist 
+
+var loginBtn = document.querySelector(".login_btn");
+var checklist = document.querySelector(".checklist_main");
+var agreedBtn = document.querySelector(".checklist_btn");
+loginBtn.addEventListener('click', function(){
+  checklist.classList.add("checklistActive");
+})
+agreedBtn.addEventListener('click', function(){
+  checklist.classList.remove("checklistActive");
+})
