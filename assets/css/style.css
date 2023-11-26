@@ -124,14 +124,14 @@ img{
 .slider_box .slider_title{
     font-size: 2.5rem;
     font-weight: 900;
-    color: #51545b;
+    color: #545e77;
     line-height: 110%;
     margin-bottom: 0.4rem;
 }
 .slider_box .slider_text{
     font-size: 1.5rem;
     font-weight: 500;
-    color: #51545b;
+    color: #545e77;
     line-height: 120%;
 }
 .body_main .btns{
@@ -146,7 +146,7 @@ img{
     font-size: 1rem;
     font-weight: 700;
     color: #ffffff;
-    background: #51545b;
+    background: #545e77;
     padding: .6rem 2rem;
     border-radius: .4rem;
     margin: 0 .8rem;
@@ -401,6 +401,8 @@ img{
     background: #000000;
 }
 /*============= Trams Condition End ===========*/
+
+/*========== checklist start ===========*/
 .checklist_main{
     position: fixed;
     background: #3a475d;
@@ -422,7 +424,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     max-width: 369px;
     border-radius: .3rem;
     text-align: right;
@@ -459,10 +461,107 @@ img{
 .checklist_box .checklist_btn:hover{
     background: #000000;
 }
-
-/*========== checklist start ===========*/
-
 /*========== checklist end ===========*/
+
+/*=========== Privacy Start ===========*/
+.privacy_main .privacy_content{
+    width: 100%;
+    max-width: 992px;
+    margin: 5rem auto 4rem auto;
+}
+.privacy_title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #3a475d;
+    line-height: 110%;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #3a475d;
+}
+.privacy_top{
+    margin: 1rem 0;
+}
+.privacy_top .privacy_data_bold{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3a475d;
+    margin-bottom: 1rem;
+}
+.privacy_top .privacy_data_bold span{
+    margin-left: 1rem;
+    color: #000000;
+}
+.privacy_top .pSubTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3a475d;
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+}
+.privacy_top .privacy_data_color{
+    font-size: 1rem;
+    font-weight: 500;
+    background: #3a475d;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-radius: .2rem;
+    text-align: justify;
+}
+.privacy_top .privacy_data{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #3a475d;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    text-align: justify;
+}
+.privacy_top ul{
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+.privacy_top ul li{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3a475d;
+    line-height: 1.5re;
+    text-align: justify;
+}
+.footer{
+    background: #3a475d;
+    padding: 2rem 0;
+}
+.privacy_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+}
+.privacy_footer .copyright{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fffff0;
+    line-height: 1.5rem;
+}
+.privacy_footer .termsc .privacy_content{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b0afaf;
+    text-decoration: none;
+    padding: 0 1rem;
+    border-left: 2px solid #868585;
+    transition: .3s;
+}
+.privacy_footer .termsc .privacy_content:hover{
+    color: #fffff0;
+}
+.privacy_footer .termsc .privacy_content:first-child{
+    border: unset;
+}
+/*=========== Privacy End ===========*/
 
 
 /*========== Start Responsive ===========*/
@@ -485,6 +584,9 @@ img{
     .onLoad .onLoad_body .logo{
         width: 20rem;
     }
+    .body_main .btns{
+        bottom: 30% !important;
+    }
 }
 
 /*----------- max-width: 768px -------------*/
@@ -498,6 +600,20 @@ img{
     }
     .login_main{
         margin: 4rem auto auto auto !important;
+    }
+    .privacy_title{
+        font-size: 3rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    .privacy_top .privacy_data_bold{
+        font-size: 1.1rem !important;
+    }
+    .privacy_footer{
+        flex-direction: column !important;
+        row-gap: 1.5rem;
+    }
+    .body_main .btns{
+        bottom: 28% !important;
     }
 }
 
@@ -525,6 +641,9 @@ img{
         font-size: .8rem !important;
         padding: 0 .4rem !important;
     }
+    .body_main .btns{
+        bottom: 25% !important;
+    }
     .body_main .btns a{
         font-size: 1rem !important;
     }
@@ -536,6 +655,22 @@ img{
     }
     .login_main{
         margin: 3rem auto auto auto !important;
+    }
+    .content .slider_main{
+        margin: 5rem  auto!important;
+    }
+    /* privacy policy */
+    .privacy_title{
+        font-size: 2.5rem !important;
+    }
+    .privacy_top .pSubTitle{
+        font-size: 1.4rem !important;
+    }
+    .privacy_main .privacy_content{
+        margin: 3rem auto !important;
+    }
+    .privacy_top ul li{
+        margin-left: 1rem !important;
     }
 }
 
@@ -578,10 +713,35 @@ img{
         width: 10rem !important;
     }
     .content .slider_main{
-        margin: 2rem auto !important;
+        margin: 4rem auto !important;
     }
     .login_main{
         margin: 2rem auto auto auto !important;
+    }
+    /* Privacy */
+    .privacy_main .privacy_content{
+        margin: 2rem auto !important;
+    }
+    .privacy_top .privacy_data_bold{
+        font-size: 1rem !important;
+    }
+    .privacy_top .pSubTitle{
+        font-size: 1.2rem !important;
+    }
+    .privacy_top .privacy_data_color, .privacy_data{
+        font-size: .9rem !important;
+    }
+    .privacy_top ul li{
+        font-size: .9rem !important;
+    }
+    .privacy_title{
+        font-size: 2rem !important;
+    }
+    .privacy_footer .termsc .privacy_content{
+        font-size: .9rem !important;
+    }
+    .privacy_footer .copyright{
+        font-size: .9rem !important;
     }
 }
 
@@ -596,7 +756,7 @@ img{
         font-size: 1rem !important;
     }
     .content .slider_main{
-        margin: 1rem auto !important;
+        margin: 3rem auto !important;
     }
     .body_main .btns a{
         font-size: .9rem !important;
